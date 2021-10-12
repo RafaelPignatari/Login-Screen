@@ -1,0 +1,27 @@
+﻿@{
+        ViewData["Title"] = "Login";
+}
+
+
+
+
+<div class="container">
+    <form asp-action="login">
+        Usuário:
+        <br />
+        <div class="iconeInput">
+            <input type="text" name="usuario" placeholder="Usuário" />
+            <i class="far fa-address-card"></i>
+        </div>
+        <br />
+        Senha:
+        <div class="iconeInput">
+            <input type="text" name="senha" placeholder="Senha" />
+            <i class="fas fa-key"></i>
+        </div>
+        <br />
+        <a href="Login/Cadastrar">Cadastrar-se</a>
+        <br />
+        <input type="submit" value="Login" class="btn btn-dark w-100" />
+    </form>
+</div>

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<div class="container">
+    <form asp-action="login">
+        Usuário:
+        <div class="iconeInput">
+            <input type="text" name="usuario" placeholder="Usuário" />
+            <i class="far fa-address-card"></i>
+        </div>
+        <br />
+        Senha:
+        <div class="iconeInput">
+            <input type="text" name="senha1" placeholder="Senha" />
+            <i class="fas fa-key"></i>
+        </div>
+        <br />
+        Confirmar Senha:
+        <div class="iconeInput">
+            <input type="text" name="senha2" placeholder="Senha" />
+            <i class="fas fa-key"></i>
+        </div>
+        <br />
+        Cargo:
+        <div class="iconeInput">
+            <select name="cargo">
+                <option value="A">Administrador</option>
+            </select>
+            <i class="fas fa-user-tag"></i>
+        </div>
+        <br />
+        <br />
+        <input type="submit" value="Cadastrar" class="btn btn-dark w-100" />
+    </form>
+</div>
